@@ -1,38 +1,92 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color:white
+}
+.center-heading{
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  color: rgb(255 255 255);
+}
+h5{
+  color: rgb(255 255 255);
+}
+p{
+  color: rgb(255 255 255);
+}
+.bodyColor{background-color: #21252994;}
+
+.margin-card{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 70px;
+  margin-top: 50px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.red{
+  background-color: #ff000091;
 }
 
-.App-link {
-  color: #61dafb;
+.yellow{
+  background-color:#ffff008c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.green{
+  background-color:#008000a8;
+}
+.white{
+  background-color:white;
+}
+
+.placecenter{
+  place-content: center;
+}
+
+.placeend{
+  text-align: end;
+}
+
+.alignselfcenter{
+  align-self: center;
+  height: 30px;
+}
+
+.custom-select{
+  font-family: cursive;
+}
+
+.card{
+  border: 2px solid white
+}
+
+.fontheading{
+  font-family: cursive;
+  font-size: 60px;
+}
+
+.countryShow{
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+.width100{
+  width:100%;
+  border-collapse: unset;
+}
+
+table, th, td {
+  border: 1px solid rgb(228, 214, 214);
+  table-layout:fixed;    border-collapse:none;
 }
