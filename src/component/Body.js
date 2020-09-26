@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import _, { values }  from 'lodash'
 import Card from "./Card";
 import Table from "./Table";
 // import '../App.css';
@@ -152,6 +151,10 @@ export class Body extends Component {
 
                 <div style={{ height:"800px", width:"100%"}} className="chartContainer">
                 <Bar data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}} }}  />
+                </div>
+
+                <div style={{ height:"800px", width:"100%"}} className="chartContainer">
+                <Line data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}} }}  />
                 </div>
                 <div className="countryShow"> <h2>Table View OF Covid-19</h2> </div>
 

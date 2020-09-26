@@ -9,7 +9,6 @@ export default function Table(props) {
     console.log("table1",Object.values(props.data1.filter(e => e.countryRegion == props.showData).map(obj => obj.provinceState != null ? obj.provinceState : obj.countryRegion )))
     return (
         <div className="bodyColor">
-            <h2></h2>
             <table className="width100" cellpadding = "5" cellspacing = "5">
                 <tr>
                     <th>Country Name</th>
