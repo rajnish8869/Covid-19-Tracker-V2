@@ -91,11 +91,27 @@ table, th, td {
   table-layout:fixed;    border-collapse:none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
   .margin-card{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 70px;
     margin-top: 50px;
   }
+}
+
+.chartWrapper {
+  position: relative;
+}
+
+.chartWrapper > canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events:none;
+}
+
+.chartAreaWrapper {
+  width: 600px;
+  overflow-x: scroll;
 }

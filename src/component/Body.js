@@ -134,7 +134,7 @@ export class Body extends Component {
                     {/* <div className="col-2 alignselfcenter">
                     <h5 className="mb-0 placeend">Select Your Country</h5>
                     </div> */}
-                    <div className="col-3">
+                    <div className="col-8 col-md-3">
                     <select className="custom-select font-select" value={this.state.showdata} onChange={this.handleShowdata}>
                       <option value="select" placeholder="select any" selected>Select Any one country</option>
                       {this.state.data2.map((obj) =>
