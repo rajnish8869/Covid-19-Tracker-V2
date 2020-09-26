@@ -48,8 +48,8 @@ const Card = (props) => {
                 <div class="card-group margin-card">
                     <div class="card green">
                         <div class="card-body ">
-                        <h5 class="card-title ">Recovered</h5>
-                        <h5 class="card-title ">{recover}</h5>
+                        <h5 class="card-title ">Recovered - {recover}</h5>
+                        <h5 class="card-title "></h5>
                         <p class="card-text">Magic always happens when you direct your inner powers to the object you want to change.</p>
                         </div>
                         <div class="card-footer">
@@ -58,8 +58,8 @@ const Card = (props) => {
                     </div>
                     <div class="card red">
                         <div class="card-body ">
-                        <h5 class="card-title">Deaths</h5>
-                        <h5 class="card-title">{death}</h5>
+                        <h5 class="card-title">Deaths - {death}</h5>
+                        {/* <h5 class="card-title"></h5> */}
                         <p class="card-text">What a great loss to the world. She/he will be missed by so many.</p>
                         </div>
                         <div class="card-footer">
@@ -68,8 +68,8 @@ const Card = (props) => {
                     </div>
                     <div class="card yellow">
                         <div class="card-body ">
-                        <h5 class="card-title">Infected</h5>
-                        <h5 class="card-title">{confirm}</h5>
+                        <h5 class="card-title">Infected - {confirm}</h5>
+                        <h5 class="card-title"></h5>
                         <p class="card-text">Don't lose hope. When the sun goes down, the stars come out.</p>
                         </div>
                         <div class="card-footer">

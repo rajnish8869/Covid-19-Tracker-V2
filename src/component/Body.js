@@ -149,13 +149,21 @@ export class Body extends Component {
                 <Card url={url}/>
                 <div className="countryShow"> <h2>Graph View OF Covid-19</h2> </div>
 
-                <div style={{ height:"800px", width:"100%"}} className="chartContainer">
+                {/* <div style={{ height:"800px", width:"100%"}} className="chartWrapper">
                 <Bar data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}} }}  />
+                </div> */}
+
+                <div className="chartWrapper">
+                    <div className="chartContainer">
+                <Bar data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}},  }}  />
+                    </div>
+                </div>
+                <div className="chartWrapper">
+                    <div className="chartContainer">
+                <Line data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}} }}  />
+                    </div>
                 </div>
 
-                <div style={{ height:"800px", width:"100%"}} className="chartContainer">
-                <Line data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}} }}  />
-                </div>
                 <div className="countryShow"> <h2>Table View OF Covid-19</h2> </div>
 
                 <Table showData={this.state.showdata} data1={this.state.data1}/>

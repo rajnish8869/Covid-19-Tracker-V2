@@ -102,16 +102,16 @@ table, th, td {
 
 .chartWrapper {
   position: relative;
+  overflow:auto;
+
 }
 
-.chartWrapper > canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
-  pointer-events:none;
+.chartContainer {
+  position: relative;
+  height: 800px;
+  width: 150%;
+  /* overflow: scroll; */
 }
-
-.chartAreaWrapper {
-  width: 600px;
-  overflow-x: scroll;
+.card-group {
+      text-align: center
 }
