@@ -90,3 +90,12 @@ table, th, td {
   border: 1px solid rgb(228, 214, 214);
   table-layout:fixed;    border-collapse:none;
 }
+
+@media only screen and (max-width: 600px) {
+  .margin-card{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    margin-top: 50px;
+  }
+}
