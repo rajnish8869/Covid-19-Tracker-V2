@@ -5,8 +5,7 @@ import Table from "./Table";
 import { Line,Bar } from "react-chartjs-2";
 import axios from "axios";
 
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      /*eslint-disable*/
+      /* eslint-disable */
 export class Body extends Component {
 
     constructor(props) {
@@ -16,29 +15,23 @@ export class Body extends Component {
           data2: [],
           data3: [],
           data4: [],
-          data5: [],
           chart:{},
           showdata:[]
         };
       }
 
       async  componentWillMount() {
-        await fetch("https://covid19.mathdro.id/api/confirmed") /*end fetch */
+        await fetch("https://covid19.mathdro.id/api/confirmed") 
           .then((results) => results.json())
           .then((data) => new Set(this.setState({ data1: data })));
 
-        await fetch("https://covid19.mathdro.id/api/countries") /*end fetch */
+        await fetch("https://covid19.mathdro.id/api/countries") 
           .then((results) => results.json())
           .then((data) => new Set(this.setState({ data2: data.countries })));
 
-        await fetch("https://covid19.mathdro.id/api/daily") /*end fetch */
+        await fetch("https://covid19.mathdro.id/api/daily") 
           .then((results) => results.json())
           .then((data) => this.setState({ data4: data }));
-
-        await fetch("https://covid19.mathdro.id/api") /*end fetch */
-          .then((results) => results.json())
-          .then((data) => this.setState({ data5: data }));
-
 
         await axios.get(`https://covid19.mathdro.id/api/countries/` + `${this.state.showdata}/`)
           .then((results) => results.data)
@@ -183,26 +176,18 @@ export class Body extends Component {
 
 confirm
     render() {
-
-        // const name =  _.orderBy(this.state.data1, ['provinceState'], ['asc'])
-        // console.log(Object.values(this.state.data1.filter(e => e.provinceState == this.state.showdata).map(obj => obj.recovered)))
-
         const url = `https://covid19.mathdro.id/api/countries/${this.state.showdata}/`
         const url1 = `https://covid19.mathdro.id/api`
-        // console.log("data5",confirm)
+        
         return (
             <div className="bodyColor">
                 <div className="center-heading"><h1 className="fontheading">Covid-19 Tracker</h1></div>
                 <div className="row placecenter">
-                    {/* <div className="col-2 alignselfcenter">
-                    <h5 className="mb-0 placeend">Select Your Country</h5>
-                    </div> */}
                     <div className="col-8 col-md-3">
                     <select className="custom-select font-select" value={this.state.showdata} onChange={this.handleShowdata}>
-                      <option value="select" placeholder="select any" selected>Select Any one country</option>
+                      <option value="select" placeholder="select any" >Select Any one country</option>
                       {this.state.data2.map((obj) =>
-                          <option key={obj.name}>{obj.name}</option>
-                          )}
+                          <option key={obj.name}>{obj.name}</option>)}
                     </select>
                     </div>
 
@@ -212,10 +197,6 @@ confirm
                 <Card url={url} url1={url1} showData={this.state.showdata}/>
                 <div className="countryShow"> <h2>Graph View OF Covid-19</h2> </div>
 
-                {/* <div style={{ height:"800px", width:"100%"}} className="chartWrapper">
-                <Bar data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}} }}  />
-                </div> */}
-
                 <div className="chartWrapper">
                     <div className="chartContainer">
                 <Bar data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}}, scales: {
@@ -224,7 +205,7 @@ confirm
                     display: true,
                 },
                 ticks: {
-                  fontColor: "white", // this here
+                  fontColor: "white",
                 },
             }],
             yAxes: [{ 
@@ -232,7 +213,7 @@ confirm
                     display: true,
                 },
                 ticks: {
-                  fontColor: "white", // this here
+                  fontColor: "white",
                 },
             }]}  }}  />
                     </div>
@@ -245,7 +226,7 @@ confirm
                     display: true,
                 },
                 ticks: {
-                  fontColor: "white", // this here
+                  fontColor: "white",
                 },
             }],
             yAxes: [{ 
@@ -253,7 +234,7 @@ confirm
                     display: true,
                 },
                 ticks: {
-                  fontColor: "white", // this here
+                  fontColor: "white",
                 },
             }]}}}  />
                     </div>

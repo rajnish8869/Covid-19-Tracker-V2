@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import '../App.css';
-// import { values } from "lodash";
-
+      /* eslint-disable */
 
 
 const Card = (props) => {
@@ -11,10 +10,8 @@ const Card = (props) => {
   
     useEffect(() => {
       getData(props.url1,props.url);
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      /*eslint-disable*/
+
     }, [props.url1,props.url]);
-  console.log("url1",props.url1)
   
     const getData = async () => {
 
@@ -71,67 +68,67 @@ const Card = (props) => {
             <div>
                 {
                 props.showData == 0 ?
-                <div class="card-group margin-card">
-                    <div class="card green">
-                        <div class="card-body ">
-                        <h5 class="card-title ">Recovered - {recover1}</h5>
-                        <h5 class="card-title "></h5>
-                        <p class="card-text">Magic always happens when you direct your inner powers to the object you want to change.</p>
+                <div className="card-group margin-card">
+                    <div className="card green">
+                        <div className="card-body ">
+                        <h5 className="card-title ">Recovered - {recover1}</h5>
+                        <h5 className="card-title "></h5>
+                        <p className="card-text">Magic always happens when you direct your inner powers to the object you want to change.</p>
                         </div>
-                        <div class="card-footer">
+                        <div className="card-footer">
                         <p >{date1}</p>
                         </div>
                     </div>
-                    <div class="card red">
-                        <div class="card-body ">
-                        <h5 class="card-title">Deaths - {death1}</h5>
-                        {/* <h5 class="card-title"></h5> */}
-                        <p class="card-text">What a great loss to the world. She/he will be missed by so many.</p>
+                    <div className="card red">
+                        <div className="card-body ">
+                        <h5 className="card-title">Deaths - {death1}</h5>
+                        {/* <h5 className="card-title"></h5> */}
+                        <p className="card-text">What a great loss to the world. She/he will be missed by so many.</p>
                         </div>
-                        <div class="card-footer">
+                        <div className="card-footer">
                         <p >{date1}</p>
                         </div>
                     </div>
-                    <div class="card yellow">
-                        <div class="card-body ">
-                        <h5 class="card-title">Infected - {confirm1}</h5>
-                        <h5 class="card-title"></h5>
-                        <p class="card-text">Don't lose hope. When the sun goes down, the stars come out.</p>
+                    <div className="card yellow">
+                        <div className="card-body ">
+                        <h5 className="card-title">Infected - {confirm1}</h5>
+                        <h5 className="card-title"></h5>
+                        <p className="card-text">Don't lose hope. When the sun goes down, the stars come out.</p>
                         </div>
-                        <div class="card-footer">
+                        <div className="card-footer">
                         <p >{date1}</p>
                         </div>
                     </div>
                 </div>
                 :
-                <div class="card-group margin-card">
-                    <div class="card green">
-                        <div class="card-body ">
-                        <h5 class="card-title ">Recovered - {recover}</h5>
-                        <h5 class="card-title "></h5>
-                        <p class="card-text">Magic always happens when you direct your inner powers to the object you want to change.</p>
+                <div className="card-group margin-card">
+                    <div className="card green">
+                        <div className="card-body ">
+                        <h5 className="card-title ">Recovered - {recover}</h5>
+                        <h5 className="card-title "></h5>
+                        <p className="card-text">Magic always happens when you direct your inner powers to the object you want to change.</p>
                         </div>
-                        <div class="card-footer">
+                        <div className="card-footer">
                         <p >{date}</p>
                         </div>
                     </div>
-                    <div class="card red">
-                        <div class="card-body ">
-                        <h5 class="card-title">Deaths - {death}</h5>
-                        {/* <h5 class="card-title"></h5> */}
-                        <p class="card-text">What a great loss to the world. She/he will be missed by so many.</p>
+                    <div className="card red">
+                        <div className="card-body ">
+                        <h5 className="card-title">Deaths - {death}</h5>
+                        {/* <h5 className="card-title"></h5> */}
+                        <p className="card-text">What a great loss to the world. She/he will be missed by so many.</p>
                         </div>
-                        <div class="card-footer">
+                        <div className="card-footer">
                         <p >{date}</p>
                         </div>
                     </div>
-                    <div class="card yellow">
-                        <div class="card-body ">
-                        <h5 class="card-title">Infected - {confirm}</h5>
-                        <h5 class="card-title"></h5>
-                        <p class="card-text">Don't lose hope. When the sun goes down, the stars come out.</p>
+                    <div className="card yellow">
+                        <div className="card-body ">
+                        <h5 className="card-title">Infected - {confirm}</h5>
+                        <h5 className="card-title"></h5>
+                        <p className="card-text">Don't lose hope. When the sun goes down, the stars come out.</p>
                         </div>
-                        <div class="card-footer">
+                        <div className="card-footer">
                         <p >{date}</p>
                         </div>
                     </div>
