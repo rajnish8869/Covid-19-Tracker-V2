@@ -59,9 +59,9 @@ const Card = (props) => {
     if(confirmed1){    
     var values4 = Object.values(cpdatas1.confirmed)
     var confirm1 = values4[0]
-    var values5 = Object.values(cpdatas1.confirmed)
+    var values5 = Object.values(cpdatas1.recovered)
     var recover1 = values5[0]
-    var values6 = Object.values(cpdatas1.confirmed)
+    var values6 = Object.values(cpdatas1.deaths)
     var death1 = values6[0]
     console.log("value4",confirm1)
     }
