@@ -231,7 +231,7 @@ confirm
             }  }}  />
                     </div>
                 </div>
-                <div className="chartWrapper">
+                <div className="chartWrapper margin-top">
                     <div className="chartContainer">
                 <Line data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}} , scales: {
             xAxes: [{ 
