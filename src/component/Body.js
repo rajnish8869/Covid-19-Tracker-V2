@@ -5,7 +5,8 @@ import Table from "./Table";
 import { Line,Bar } from "react-chartjs-2";
 import axios from "axios";
 
-
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      /*eslint-disable*/
 export class Body extends Component {
 
     constructor(props) {
@@ -217,12 +218,44 @@ confirm
 
                 <div className="chartWrapper">
                     <div className="chartContainer">
-                <Bar data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}},  }}  />
+                <Bar data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}}, scales: {
+            xAxes: [{ 
+                gridLines: {
+                    display: true,
+                },
+                ticks: {
+                  fontColor: "white", // this here
+                },
+            }],
+            yAxes: [{ 
+                gridLines: {
+                    display: true,
+                },
+                ticks: {
+                  fontColor: "white", // this here
+                },
+            }]}  }}  />
                     </div>
                 </div>
                 <div className="chartWrapper">
                     <div className="chartContainer">
-                <Line data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}} }}  />
+                <Line data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}} , scales: {
+            xAxes: [{ 
+                gridLines: {
+                    display: true,
+                },
+                ticks: {
+                  fontColor: "white", // this here
+                },
+            }],
+            yAxes: [{ 
+                gridLines: {
+                    display: true,
+                },
+                ticks: {
+                  fontColor: "white", // this here
+                },
+            }]}}}  />
                     </div>
                 </div>
 

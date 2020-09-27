@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import '../App.css';
-import { values } from "lodash";
+// import { values } from "lodash";
+
 
 
 const Card = (props) => {
     const [cpdatas, setCpdatas] = useState([]);
     const [cpdatas1, setCpdatas1] = useState([]);
-    // const [messages, setMessages] = useState([]);
-    // const [showdata, setShowdata] = useState([]);
   
     useEffect(() => {
       getData(props.url1,props.url);
       // eslint-disable-next-line react-hooks/exhaustive-deps
-      // /*eslint-disable*/
+      /*eslint-disable*/
     }, [props.url1,props.url]);
   console.log("url1",props.url1)
   
@@ -39,10 +38,10 @@ const Card = (props) => {
     
     const confirmed = cpdatas.confirmed
     const confirmed1 = cpdatas1.confirmed
-    const lastUpdate = cpdatas.lastUpdate
-    const lastUpdate1 = cpdatas.lastUpdate1
-    const date = Date(lastUpdate).slice(0,24)
-    const date1 = Date(lastUpdate1).slice(0,24)
+    const lastUpdates = cpdatas.lastUpdate
+    const lastUpdates1 = cpdatas.lastUpdate1
+    const date = Date(lastUpdates).slice(0,24)
+    const date1 = Date(lastUpdates1).slice(0,24)
 
 
     if (confirmed){
@@ -63,9 +62,11 @@ const Card = (props) => {
     var recover1 = values5[0]
     var values6 = Object.values(cpdatas1.deaths)
     var death1 = values6[0]
-    console.log("value4",confirm1)
+    // console.log("value4",confirm1)
     }
 
+    // console.log("lastUpdate",cpdatas.lastUpdates)
+    // console.log("lastUpdate1",cpdatas.lastUpdates1)
         return (
             <div>
                 {

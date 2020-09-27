@@ -1,14 +1,15 @@
 import React from 'react'
 import '../App.css';
-
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      /*eslint-disable*/
 
 export default function Table(props) {
     // console.log("table",Object.values(props.data1.filter(e => e.countryRegion == props.showData).map(obj => obj.recovered)))
     // console.log("table",Object.values(props.data1.filter(e => e.countryRegion == props.showData).map(obj => obj.deaths)))
     // console.log("table",Object.values(props.data1.filter(e => e.countryRegion == props.showData).map(obj => obj.active)))
-    console.log("table1",Object.values(props.data4.map(obj => obj.totalConfirmed)))
-    console.log("table1",Object.values(props.data4.map(obj => obj.deaths.total)))
-    console.log("table1",Object.values(props.data4.map(obj => obj.reportDate)))
+    // console.log("table1",Object.values(props.data4.map(obj => obj.totalConfirmed)))
+    // console.log("table1",Object.values(props.data4.map(obj => obj.deaths.total)))
+    // console.log("table1",Object.values(props.data4.map(obj => obj.reportDate)))
     // console.log("table1",Object.values(props.data1.filter(e => e.countryRegion == props.showData).map(obj => obj.provinceState != null ? obj.provinceState : obj.countryRegion )))
     return (
         <div className="bodyColor">
