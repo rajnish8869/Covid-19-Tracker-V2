@@ -98,6 +98,19 @@ table, th, td {
     margin-bottom: 70px;
     margin-top: 50px;
   }
+
+  .chartWrapper {
+    position: relative;
+    overflow:auto;
+  
+  }
+  
+  .chartContainer {
+    position: relative;
+    height: 800px;
+    width: 150%;
+    /* overflow: scroll; */
+  }
 }
 
 .chartWrapper {
@@ -109,7 +122,7 @@ table, th, td {
 .chartContainer {
   position: relative;
   height: 800px;
-  width: 150%;
+  width: 100%;
   /* overflow: scroll; */
 }
 .card-group {
