@@ -110,6 +110,7 @@ table, th, td {
     position: relative;
     height: 800px;
     width: 150%;
+    background-color: #212529b8;
     /* overflow: scroll; */
   }
 }
@@ -124,6 +125,7 @@ table, th, td {
   position: relative;
   height: 800px;
   width: 100%;
+  background-color: #212529b8;
   /* overflow: scroll; */
 }
 .card-group {
