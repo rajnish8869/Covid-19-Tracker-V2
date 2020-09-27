@@ -4,6 +4,7 @@ import Table from "./Table";
 // import '../App.css';
 import { Line,Bar } from "react-chartjs-2";
 import axios from "axios";
+import 'chartjs-plugin-zoom';
 
       /* eslint-disable */
 export class Body extends Component {
@@ -215,7 +216,19 @@ confirm
                 ticks: {
                   fontColor: "white",
                 },
-            }]}  }}  />
+            }]},  plugins: {
+              zoom: {
+                pan: {
+                  enabled: true,
+                  mode: 'x',
+                },
+                zoom: {
+                  enabled: true,
+                  drag: true,
+                  mode: 'xy'
+                }
+              }
+            }  }}  />
                     </div>
                 </div>
                 <div className="chartWrapper">
@@ -236,7 +249,19 @@ confirm
                 ticks: {
                   fontColor: "white",
                 },
-            }]}}}  />
+            }]} ,   plugins: {
+              zoom: {
+                pan: {
+                  enabled: true,
+                  mode: 'x',
+                },
+                zoom: {
+                  enabled: true,
+                  drag: true,
+                  mode: 'xy'
+                }
+              }
+            }}}  />
                     </div>
                 </div>
 
