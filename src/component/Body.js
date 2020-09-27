@@ -253,6 +253,7 @@ confirm
               zoom: {
                 pan: {
                   enabled: true,
+                  drag: true,
                   mode: 'x',
                 },
                 zoom: {
