@@ -35,10 +35,9 @@ const Card = (props) => {
     
     const confirmed = cpdatas.confirmed
     const confirmed1 = cpdatas1.confirmed
-    const lastUpdates = cpdatas.lastUpdate
-    const lastUpdates1 = cpdatas.lastUpdate1
-    const date = Date(lastUpdates).slice(0,24)
-    const date1 = Date(lastUpdates1).slice(0,24)
+    // const lastUpdates = Object.values(cpdatas.lastUpdate)
+    // const date = Date(lastUpdates).slice(0,24)
+    
 
 
     if (confirmed){
@@ -48,6 +47,10 @@ const Card = (props) => {
         var recover = values2[0]
         var values3 = Object.values(cpdatas.deaths)
         var death = values3[0]
+        var lastUpdates = Object.values(cpdatas.lastUpdate)
+        var lastUpdates0 = Object.values(cpdatas.lastUpdate)
+        var date = lastUpdates.slice(0,10)
+        var date0 = lastUpdates.slice(12,19)
         // console.log(car)
 
     }
@@ -59,11 +62,15 @@ const Card = (props) => {
     var recover1 = values5[0]
     var values6 = Object.values(cpdatas1.deaths)
     var death1 = values6[0]
+    var lastUpdates1 = cpdatas1.lastUpdate
+    var lastUpdates2 = cpdatas1.lastUpdate
+    var date1 = lastUpdates1.slice(0,10)
+    var date2 = lastUpdates2.slice(12,19)
     // console.log("value4",confirm1)
     }
 
     // console.log("lastUpdate",cpdatas.lastUpdates)
-    // console.log("lastUpdate1",cpdatas.lastUpdates1)
+    // console.log("date1",date1)
         return (
             <div>
                 {
@@ -76,17 +83,16 @@ const Card = (props) => {
                         <p className="card-text">Magic always happens when you direct your inner powers to the object you want to change.</p>
                         </div>
                         <div className="card-footer">
-                        <p >{date1}</p>
+                        <p >Last Update : {date1} {date2} UTC</p>
                         </div>
                     </div>
                     <div className="card red">
                         <div className="card-body ">
                         <h5 className="card-title">Deaths - {death1}</h5>
-                        {/* <h5 className="card-title"></h5> */}
                         <p className="card-text">What a great loss to the world. She/he will be missed by so many.</p>
                         </div>
                         <div className="card-footer">
-                        <p >{date1}</p>
+                        <p >Last Update : {date1} {date2} UTC</p>
                         </div>
                     </div>
                     <div className="card yellow">
@@ -96,7 +102,7 @@ const Card = (props) => {
                         <p className="card-text">Don't lose hope. When the sun goes down, the stars come out.</p>
                         </div>
                         <div className="card-footer">
-                        <p >{date1}</p>
+                        <p >Last Update : {date1} {date2} UTC</p>
                         </div>
                     </div>
                 </div>
@@ -109,17 +115,16 @@ const Card = (props) => {
                         <p className="card-text">Magic always happens when you direct your inner powers to the object you want to change.</p>
                         </div>
                         <div className="card-footer">
-                        <p >{date}</p>
+                        <p >Last Update : {date} {date0} UTC</p>
                         </div>
                     </div>
                     <div className="card red">
                         <div className="card-body ">
                         <h5 className="card-title">Deaths - {death}</h5>
-                        {/* <h5 className="card-title"></h5> */}
                         <p className="card-text">What a great loss to the world. She/he will be missed by so many.</p>
                         </div>
                         <div className="card-footer">
-                        <p >{date}</p>
+                        <p >Last Update : {date} {date0} UTC</p>
                         </div>
                     </div>
                     <div className="card yellow">
@@ -129,7 +134,7 @@ const Card = (props) => {
                         <p className="card-text">Don't lose hope. When the sun goes down, the stars come out.</p>
                         </div>
                         <div className="card-footer">
-                        <p >{date}</p>
+                        <p >Last Update : {date} {date0} UTC</p>
                         </div>
                     </div>
                 </div>}

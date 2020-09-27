@@ -186,7 +186,7 @@ confirm
                 <div className="row placecenter">
                     <div className="col-8 col-md-3">
                     <select className="custom-select font-select" value={this.state.showdata} onChange={this.handleShowdata}>
-                      <option value="select" placeholder="select any" >Select Any one country</option>
+                      <option value="select" placeholder="select any" >Select Any One Country</option>
                       {this.state.data2.map((obj) =>
                           <option key={obj.name}>{obj.name}</option>)}
                     </select>
