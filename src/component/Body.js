@@ -181,7 +181,8 @@ confirm
         const url1 = `https://covid19.mathdro.id/api`
         
         return (
-            <div className="bodyColor">
+          <div className="bodyColor">
+            <div className=" container">
                 <div className="center-heading"><h1 className="fontheading">Covid-19 Tracker</h1></div>
                 <div className="row placecenter">
                     <div className="col-8 col-md-3">
@@ -269,6 +270,7 @@ confirm
 
                 <Table showData={this.state.showdata} data1={this.state.data1} data4={this.state.data4}/>
               </div>
+            </div>  
         )
     }
 }
