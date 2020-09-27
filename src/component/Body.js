@@ -200,7 +200,7 @@ confirm
 
                 <div className="chartWrapper">
                     <div className="chartContainer">
-                <Bar data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}}, scales: {
+                <Bar data={this.setChart} options={{ maintainAspectRatio: true, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}}, scales: {
             xAxes: [{ 
                 gridLines: {
                     display: true,
@@ -233,7 +233,7 @@ confirm
                 </div>
                 <div className="chartWrapper margin-top">
                     <div className="chartContainer">
-                <Line data={this.setChart} options={{ maintainAspectRatio: false, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}} , scales: {
+                <Line data={this.setChart} options={{ maintainAspectRatio: true, responsive: true, legend: { labels: {fontColor: "white",fontSize: 15}} , scales: {
             xAxes: [{ 
                 gridLines: {
                     display: true,
