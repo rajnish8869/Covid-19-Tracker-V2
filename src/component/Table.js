@@ -32,7 +32,7 @@ export default function Table(props) {
                     <th>Deaths</th>
                 </tr>
                 {Object.values(props.data1.filter(e => e.countryRegion == props.showData).map(obj =>
-                <tr key={obj.provinceState}>
+                <tr key={obj.uid}>
                     <th> {obj.provinceState}</th>
                     <th> {obj.recovered}</th>
                     <th> {obj.deaths}</th>

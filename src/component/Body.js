@@ -221,11 +221,11 @@ confirm
               zoom: {
                 pan: {
                   enabled: true,
-                  mode: 'x',
+                  mode: 'xy',
                 },
                 zoom: {
                   enabled: true,
-                  drag: true,
+                  // drag: true,
                   mode: 'xy'
                 }
               }
@@ -254,12 +254,12 @@ confirm
               zoom: {
                 pan: {
                   enabled: true,
-                  mode: 'x',
+                  mode: 'xy',
                 },
                 zoom: {
                   enabled: true,
-                  drag: true,
-                  mode: 'xy'
+                  // drag: true,
+                  mode: 'y'
                 }
               }
             }}}  />
