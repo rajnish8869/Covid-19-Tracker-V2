@@ -1,31 +1,24 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Tooltip } from "react-leaflet";
-import { Icon } from "leaflet";
-
 
 
 export default function Maps(props) {
 
-  var verypoor = new Icon({
-    iconUrl: "http://nbiot.urbansciences.in/image-marker/very-poor.png",
-    iconSize: [35, 35],
-    iconAnchor: [17, 34],
-    // popupAnchor: [1, -34],
-    // shadowSize: [41, 41],
-  });
 
-  // const [data, setData] = useState([]);
+  var [mapCenter, setMapCenter] = useState([25.6912, 78.4138 ]);
+
 
   // useEffect(() => {
-
-  //    fetch("https://covid19.mathdro.id/api/recovered")
+   
+  //    fetch(`https://disease.sh/v3/covid-19/countries/` + showData)
   //     .then((results) => results.json())
-  //     .then((data) => setData( data));
-
+  //     .then((data) => setMapCenter([data.countryInfo.lat, data.countryInfo.long]))
+      
   // }, [])
-
+  
+  // console.log(mapCenter)
   return (
-    <MapContainer center={[24.6912, 78.4138]} zoom={5} scrollWheelZoom={false}>
+    <MapContainer center={[25.6912, 78.4138 ]} zoom={5} scrollWheelZoom={false}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

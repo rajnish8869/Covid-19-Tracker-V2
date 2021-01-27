@@ -19,10 +19,11 @@ export class Body extends Component {
       data5: [],
       chart: {},
       showdata: [],
+      // mapCenter: { lat: 24.6912, lng: 78.4138 },
     };
   }
 
-  async componentWillMount() {
+  async componentDidMount() {
     await fetch("https://covid19.mathdro.id/api/confirmed")
       .then((results) => results.json())
       .then((data) => new Set(this.setState({ data1: data })));
@@ -38,6 +39,13 @@ export class Body extends Component {
     await fetch("https://covid19.mathdro.id/api/daily")
       .then((results) => results.json())
       .then((data) => this.setState({ data4: data }));
+
+    
+    // await fetch(`https://disease.sh/v3/covid-19/countries/china`)
+    // .then((results) => results.json())
+    // .then((data) => this.setState({mapCenter : {lat: data.countryInfo.lat, lng: data.countryInfo.long}}));
+    // console.log(this.state.mapCenter)
+
 
     await axios
       .get(
@@ -342,7 +350,7 @@ export class Body extends Component {
                 }}
               /> */}
 
-              <Maps  data5={this.state.data5} showData={this.state.showdata}/>
+              <Maps  data5={this.state.data5} showData={this.state.showdata} center={this.state.mapCenter}/>
             </div>
           </div>
 

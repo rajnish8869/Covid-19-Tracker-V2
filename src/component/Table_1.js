@@ -16,7 +16,7 @@ export default function Table_1(props) {
           <tbody>
             {Object.values(
               props.data4.map((obj) => (
-                <tr>
+                <tr key={obj.reportDate}>
                   <th> {obj.reportDate}</th>
                   <th> {obj.totalConfirmed}</th>
                   <th> {obj.deaths.total}</th>
@@ -40,7 +40,7 @@ export default function Table_1(props) {
               props.data1
                 .filter((e) => e.countryRegion == props.showData)
                 .map((obj) => (
-                  <tr>
+                  <tr key={obj.uid}>
                     <th> {obj.provinceState}</th>
                     <th> {obj.recovered}</th>
                     <th> {obj.deaths}</th>
