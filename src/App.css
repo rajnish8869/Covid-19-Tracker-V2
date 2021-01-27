@@ -159,12 +159,12 @@ table {
 td,th {
 	padding: 5px;
 	width: 1000px;
-  border-right: 1px solid #ccc;
+  /* border-right: 1px solid #ccc; */
 	table-layout: fixed;
   
 }
 thead tr {
-	background: #888;
+	background: rgba(0, 0, 0, 0.767);
 	color: #eee;
 	display: block;
 	position: relative;
@@ -177,5 +177,6 @@ tbody {
 	overflow-x: hidden;
 }
 tbody tr:nth-child(even) {
-	background: #ddd;
+  background: #ddd;
+  color: #000000;
 }
