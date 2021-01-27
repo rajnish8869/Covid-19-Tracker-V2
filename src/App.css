@@ -25,6 +25,7 @@ p {
 }
 .bodyColor {
   background-color: #21252994;
+  padding-bottom: 50px;
 }
 
 .margin-card {
@@ -74,6 +75,7 @@ p {
 .fontheading {
   font-family: cursive;
   font-size: 60px;
+  margin-bottom: 30px;
 }
 
 .countryShow {
@@ -83,18 +85,6 @@ p {
   padding-top: 50px;
 }
 
-.width100 {
-  width: 100%;
-  border-collapse: unset;
-}
-
-table,
-th,
-td {
-  border: 1px solid rgb(228, 214, 214);
-  /* table-layout: fixed; */
-  border-collapse: none;
-}
 
 .leaflet-container {
   width: 100%;
@@ -158,4 +148,34 @@ td {
   color: black;
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+* {box-sizing: border-box;}
+table {
+	border-collapse: collapse;
+	width: auto;
+	table-layout: fixed;
+}
+td,th {
+	padding: 5px;
+	width: 1000px;
+  border-right: 1px solid #ccc;
+	table-layout: fixed;
+  
+}
+thead tr {
+	background: #888;
+	color: #eee;
+	display: block;
+	position: relative;
+}
+tbody {
+	display: block;
+	height: 80vh;
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+tbody tr:nth-child(even) {
+	background: #ddd;
 }

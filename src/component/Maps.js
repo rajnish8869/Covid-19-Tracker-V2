@@ -25,12 +25,12 @@ export default function Maps(props) {
   // }, [])
 
   return (
-    <MapContainer center={[24.6912, 78.4138]} zoom={5}>
+    <MapContainer center={[24.6912, 78.4138]} zoom={5} scrollWheelZoom={false}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {props.data5.filter((x) => x.lat != null && x.long != null).map((datas) => (
+      {props.data5.filter((x) => x.lat != null && x.long != null && props.showData == 0 ? x.countryRegion : props.showData == x.countryRegion).map((datas) => (
         <Marker
         key={datas.uid}
           position={[datas.lat,datas.long]}

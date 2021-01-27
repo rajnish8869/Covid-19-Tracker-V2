@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Card from "./Card";
-import Table from "./Table";
+import Table_1 from "./Table_1";
 import Maps from "./Maps";
 // import '../App.css';
 import { Line, Bar } from "react-chartjs-2";
@@ -210,6 +210,7 @@ export class Body extends Component {
         <div className=" container">
           <div className="center-heading">
             <h1 className="fontheading">Covid-19 Tracker</h1>
+            <h4>Showing WorldWide & Individual Country Data From 1<sup style={{textTransform: 'lowercase'}}>st</sup> January 2020 To Till Date</h4>
           </div>
           <div className="row placecenter">
             <div className="col-8 col-md-3">
@@ -240,6 +241,7 @@ export class Body extends Component {
           <div className="countryShow">
             {" "}
             <h2>Chart</h2>{" "}
+            
           </div>
 
           <div className="chartWrapper">
@@ -340,7 +342,7 @@ export class Body extends Component {
                 }}
               /> */}
 
-              <Maps  data5={this.state.data5}/>
+              <Maps  data5={this.state.data5} showData={this.state.showdata}/>
             </div>
           </div>
 
@@ -349,7 +351,7 @@ export class Body extends Component {
             <h2>Table</h2>{" "}
           </div>
 
-          <Table
+          <Table_1
             showData={this.state.showdata}
             data1={this.state.data1}
             data4={this.state.data4}
