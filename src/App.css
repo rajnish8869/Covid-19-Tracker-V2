@@ -160,7 +160,8 @@ td,th {
 	padding: 5px;
 	width: 1000px;
   /* border-right: 1px solid #ccc; */
-	table-layout: fixed;
+  table-layout: fixed;
+  text-align: center;
   
 }
 thead tr {

@@ -5,7 +5,7 @@ import { MapContainer, TileLayer, Marker, Popup, Tooltip } from "react-leaflet";
 export default function Maps(props) {
 
 
-  var [mapCenter, setMapCenter] = useState([25.6912, 78.4138 ]);
+  // var [mapCenter, setMapCenter] = useState([25.6912, 78.4138 ]);
 
 
   // useEffect(() => {
@@ -18,7 +18,7 @@ export default function Maps(props) {
   
   // console.log(mapCenter)
   return (
-    <MapContainer center={[25.6912, 78.4138 ]} zoom={5} scrollWheelZoom={false}>
+    <MapContainer center={[25.6912, 78.4138 ]} zoom={4} scrollWheelZoom={false}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
