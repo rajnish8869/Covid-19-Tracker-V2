@@ -181,3 +181,23 @@ tbody tr:nth-child(even) {
   background: #ddd;
   color: #000000;
 }
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #000;
+  background-color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: black;
+}
+
+a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+.nav{
+  place-content: center;
+}
